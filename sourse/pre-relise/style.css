@@ -1,0 +1,36 @@
+/** 
+* файл index.styl
+**/
+@font-face
+{
+    font-family: 'Aleo';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/Regular/aleo-regular-webfont.woff2') format('woff2'), url('fonts/Regular/aleo-regular-webfont.ttf') format('truetype'), url('fonts/Regular/aleo-regular-webfont.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Aleo';
+    font-weight: lighter;
+    font-style: normal;
+
+    src: url('fonts/Light/aleo-light-webfont.woff2') format('woff2'), url('fonts/Light/aleo-light-webfont.ttf') format('truetype'), url('fonts/Light/aleo-light-webfont.woff') format('woff');
+}
+article,
+section,
+div,
+nav,
+menu
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 14px;
+}
+h1
+{
+    font-family: Aleo;
+}

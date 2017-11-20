@@ -1,6 +1,27 @@
-/** 
-* файл index.styl
-**/
+@font-face
+{
+    font-family: 'Aleo';
+    font-weight: lighter;
+    font-style: normal;
+
+    src: url('fonts/Light/aleo-light-webfont.woff2') format('woff2'), url('fonts/Light/aleo-light-webfont.ttf') format('truetype'), url('fonts/Light/aleo-light-webfont.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Aleo';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('fonts/Bold/aleo-bold-webfont.woff2') format('woff2'), url('fonts/Bold/aleo-bold-webfont.ttf') format('truetype'), url('fonts/Bold/aleo-bold-webfont.woff') format('woff');
+}
+@font-face
+{
+    font-family: 'Aleo';
+    font-weight: normal;
+    font-style: italic;
+
+    src: url('fonts/Regular Italic/aleo-italic-webfont.woff2') format('woff2'), url('fonts/Regular Italic/aleo-italic-webfont.ttf') format('truetype'), url('fonts/Regular Italic/aleo-italic-webfont.woff') format('woff');
+}
 @font-face
 {
     font-family: 'Aleo';
@@ -11,26 +32,132 @@
 }
 @font-face
 {
-    font-family: 'Aleo';
-    font-weight: lighter;
+    font-family: 'ManoNegra';
+    font-weight: normal;
     font-style: normal;
 
-    src: url('fonts/Light/aleo-light-webfont.woff2') format('woff2'), url('fonts/Light/aleo-light-webfont.ttf') format('truetype'), url('fonts/Light/aleo-light-webfont.woff') format('woff');
+    src: url('fonts/ManoNegra/WCManoNegraBta.woff2') format('woff2'), url('fonts/ManoNegra/WCManoNegraBta.woff') format('woff'), url('fonts/ManoNegra/WCManoNegraBta.ttf') format('truetype');
 }
 article,
 section,
 div,
 nav,
-menu
+menu,
+html,
+body,
+header,
+footer,
+h1,
+p
 {
     margin: 0;
     padding: 0;
 }
 html
 {
+    font-family: Aleo;
     font-size: 14px;
 }
-h1
+.header
 {
-    font-family: Aleo;
+    height: auto;
+}
+.header__wrapp
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.header__logo-link
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 24px;
+}
+.header__nav
+{
+    padding-top: 46px;
+}
+.header__menu
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-right: 74px;
+
+    list-style: none;
+
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.header__menu-item:not(:first-child)
+{
+    margin-left: 48px;
+}
+.header__menu-link
+{
+    font-size: 1rem;
+    font-weight: 400;
+
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    color: #3b3b3b;
+}
+.header__menu-link:hover
+{
+    text-decoration: underline;
+}
+.presentation
+{
+    height: auto;
+}
+.presentation__wrapp
+{
+    width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+
+    color: #fff;
+    background-image: url('images/presentation__bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.presentation__head
+{
+    font-family: ManoNegra;
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: .6;
+
+    padding-top: 210px;
+}
+.presentation__text
+{
+    font-size: 1.143rem;
+    font-weight: 400;
+    line-height: 3.75;
+
+    display: inline-block;
+
+    padding-top: 18px;
+    padding-right: 55px;
+    padding-bottom: 228px;
+    padding-left: 55px;
+
+    background-image: url('images/presentation__line.jpg'), url('images/presentation__line.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 49px, right 49px;
 }

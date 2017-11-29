@@ -1,0 +1,50 @@
+.slider
+  margin-top 200px
+  &__wrapp
+    max-width MaxWidth
+    alignBlock()
+  &__head:after
+    left 15%
+  &__content
+    width 100%
+    height 300px
+    margin-top 80px
+  &__item
+    width 230px
+  &__image
+    margin 0 auto
+    margin-bottom 30px
+  &__text
+    display flex
+    margin 0 auto
+    justify-content space-between
+    color  #555555
+    font-size 1.143em
+    font-weight 300
+    width 230px
+  &__description
+    display block
+    width 230px
+    margin 0 auto
+    font-size .857em
+    font-weight 300
+    font-style italic
+    text-align left
+    color #b7b7b7
+  &__dots
+    position absolute
+    top -86px
+    right 0
+    display flex
+    list-style none
+    &-item
+      margin-left 11px
+      &_active .slider__dots-button
+        background-color  #9b9b9b
+    &-button
+      border none
+      border-radius 50%
+      font-size 0
+      background-color  #dedede
+      width 9px
+      height 9px

@@ -1,4 +1,3 @@
-
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___
@@ -3003,14 +3002,3 @@
     };
 
 }));
-
-// файл index.js
-
-$('.slider__content').slick({
-    arrows: false,
-    dots: true,
-    dotsClass: "slider__dots",
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    autoplaySpeed: 2000
-});

@@ -9,7 +9,9 @@ header,
 footer,
 h1,
 h2,
-p
+p,
+ul, li,
+button
 	margin 0
 	padding 0
 
@@ -17,5 +19,18 @@ html
 	font-size FontSize
 	font-family Aleo
 
-	
-
+.header__h2
+	color  #3b3b3b
+	font-size 1.571em
+	font-weight 700
+	text-transform uppercase
+	position relative
+	&:after
+		content ' '
+		width 200px
+		height 1px
+		background-color #e5e3e3
+		display block
+		position absolute
+		left 11%
+		top calc(50% - 0.02em)
